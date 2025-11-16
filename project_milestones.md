@@ -42,7 +42,7 @@ Checklist:
   
 - **Checklist:**
  - [ ] Chapter 3 of the Project document
- - [ ] Repo created + initial commit
- - [ ] Env + dependencies installed
+ - [x] Repo created + initial commit
+ - [x] Env + dependencies installed
  - [ ] Create/list endpoints work
- - [ ] GitHub pushed
+ - [x] GitHub pushed
