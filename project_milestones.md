@@ -23,7 +23,7 @@ Checklist:
 - [x] Write "Problem Statement" in README.md
 - [ ] Complete Chapter 1 of ITCC14 Doc
 - [ ] Complete Chapter 2 of ITCC14 Doc
-- [ ] Create api.yaml and add endpoints
+- [x] Create api.yaml and add endpoints
 - [x] Commit and push all files to GitHub
 - [x] Choose a programming language
 
