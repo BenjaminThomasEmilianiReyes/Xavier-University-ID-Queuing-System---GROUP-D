@@ -19,14 +19,13 @@
 - An initial api.yaml file (or Postman collection) that lists all planned endpoints (e.g., /users, /items).
 
 Checklist:
-- [ ] Hold team meeting to finalize topic
-- [ ] Write "Problem Statement" in README.md
-- [ ] Define fields for "" and "" models
+- [x] Hold team meeting to finalize topic
+- [x] Write "Problem Statement" in README.md
 - [ ] Complete Chapter 1 of ITCC14 Doc
 - [ ] Complete Chapter 2 of ITCC14 Doc
 - [ ] Create api.yaml and add endpoints
-- [ ] Commit and push all files to GitHub
-- [ ] Choose a programming language
+- [x] Commit and push all files to GitHub
+- [x] Choose a programming language
 
 ### __Milestone 2 (Nov Week 2): Half API + Half Documentation + Git/GitHub__
 
@@ -42,7 +41,7 @@ Checklist:
   - Continue the chapter 3 of ITCC14 Final Project Doc
   
 - **Checklist:**
- - [ ] Chapter 3 Of the Project document
+ - [ ] Chapter 3 of the Project document
  - [ ] Repo created + initial commit
  - [ ] Env + dependencies installed
  - [ ] Create/list endpoints work
