@@ -1,0 +1,100 @@
+project:
+  name: "Xavier University ID Queuing System"
+  description: |
+    A RESTful API integrated with MongoDB to manage online ID
+    processing reservations, student profiles, and admin-controlled
+    time slots for Xavier University.
+
+database:
+  type: "MongoDB"
+  connection: "mongodb://localhost:27017/xu_id_queue_system"
+  collections:
+    students:
+      description: "Stores primary student information."
+      sample_document:
+        _id: "ObjectId"
+        idNumber: "2025-XXXXX"
+        fullName: "Juan Dela Cruz"
+        contact: "09123456789"
+        createdAt: "ISODate"
+    reservations:
+      description: "Stores student reservation requests."
+      sample_document:
+        _id: "ObjectId"
+        studentId: "ObjectId(ref: students)"
+        date: "2025-10-15"
+        time: "10:30"
+        status: "Pending"
+        createdAt: "ISODate"
+    slots:
+      description: "Stores all available slots for admins to manage."
+      sample_document:
+        _id: "ObjectId"
+        date: "2025-10-15"
+        time: "10:30"
+        isAvailable: true
+
+api:
+  base_url: "/api"
+  endpoints:
+
+    - path: "/students"
+      methods:
+        GET: "Fetch all students or a specific student by ID."
+        POST: "Create a new student document."
+        PUT: "Update student information."
+        DELETE: "Remove a student from the system."
+
+    - path: "/students/reserve"
+      method: POST
+      description: "Submit a reservation request."
+      request_body:
+        idNumber: "string"
+        fullName: "string"
+        date: "YYYY-MM-DD"
+        time: "HH:MM"
+      response:
+        success: "Reservation created successfully."
+        errors:
+          - "Time slot unavailable"
+          - "Student not found"
+
+    - path: "/students/confirmation"
+      method: GET
+      description: "Retrieve student reservation confirmation."
+      query_params:
+        idNumber: "string"
+      returns:
+        reservation_details:
+          idNumber: "string"
+          fullName: "string"
+          date: "YYYY-MM-DD"
+          time: "HH:MM"
+          status: "Pending | Confirmed | Completed"
+
+    - path: "/admin/slots"
+      methods:
+        GET: "Retrieve all available or filled time slots."
+        POST: "Create new available slots."
+        PUT: "Update slot details."
+        DELETE: "Remove or disable time slots."
+
+booking_record_fields:
+  idNumber: "string"
+  fullName: "string"
+  date: "YYYY-MM-DD"
+  time: "HH:MM"
+  status: ["Pending", "Confirmed", "Completed"]
+
+system_features:
+  - Online reservation system
+  - Real-time slot availability
+  - Automated booking confirmation
+  - Admin slot management dashboard
+  - Centralized MongoDB storage
+
+security:
+  - Admin authentication required for slot management
+  - Input validation on all endpoints
+  - HTTPS enforced
+  - Rate limiting on reservation endpoints
