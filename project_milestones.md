@@ -1,5 +1,5 @@
 ### __MEMBERS:__
-1. 
+1. [Banaag, Maria Rica Dean M.](https://github.com/MariaRicaDeanBanaag)
 2. [Basin, Christopher John R.](https://github.com/ChristopherBasin)
 3. [Reyes, Benjamin Thomas Emiliani](https://github.com/BenjaminThomasEmilianiReyes)
 
