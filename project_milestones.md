@@ -1,7 +1,8 @@
 ### __MEMBERS:__
 1. [Banaag, Maria Rica Dean M.](https://github.com/MariaRicaDeanBanaag)
 2. [Basin, Christopher John R.](https://github.com/ChristopherBasin)
-
+3. [Labadan, Paula Gwynzelle](https://github.com/paulagwynzellelabadan?fbclid=IwY2xjawOJFEVleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEexBU6O2wQRlpmEzFbC4la0UAUm9hFCL1dQNDsqi1nAGOq9Ik4zCDW2OMAek4_aem_fEscnUmlU53HtQuTYBiFhQ)
+4. [Reyes, Benjamin Thomas Emiliani](https://github.com/BenjaminThomasEmilianiReyes)
 
 ### __Milestone 1 (Nov Week 1): Project Proposal & Introduction__
 
