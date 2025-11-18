@@ -22,8 +22,8 @@
 Checklist:
 - [x] Hold team meeting to finalize topic
 - [x] Write "Problem Statement" in README.md
-- [ ] Complete Chapter 1 of ITCC14 Doc
-- [ ] Complete Chapter 2 of ITCC14 Doc
+- [x] Complete Chapter 1 of Doc
+- [x] Complete Chapter 2 of Doc
 - [x] Create api.yaml and add endpoints
 - [x] Commit and push all files to GitHub
 - [x] Choose a programming language
